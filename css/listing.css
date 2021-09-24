@@ -1,0 +1,138 @@
+.gray-bg {
+    background-color: #F5F9FC;
+}
+
+.listing {
+    padding: 72px 0;
+
+}
+
+
+.listing-info {
+    width: 50%;
+}
+
+.listing-info .listing-title {
+    font-size: 48px;
+    font-weight: 700;
+    color: #0E1B47;
+    margin-bottom: 42px;
+}
+
+.listing-info .listing-text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: .5px;
+    margin-bottom: 24px;
+}
+
+/* advantages */
+
+
+
+.advantages .advantages-head {
+
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    color: #0E1B47;
+    margin-bottom: 64px;
+}
+
+.advantages-head .advantages-title {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 32px;
+}
+
+.advantages-head .advantages-text {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.advantages-content {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 40px;
+    row-gap: 80px;
+    color: #0E1B47;
+}
+
+.advantages-content .advantages-card {
+    flex: 1 1 calc(25% - 40px);
+}
+
+.advantages-card .advantages-card__icon {
+    margin-bottom: 24px;
+}
+
+.advantages-card .advantages-card__title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.advantages-card__text {
+    color: #081729;
+}
+
+/* listing companies */
+
+.companies {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #0E1B47;
+
+}
+
+.companies-info {
+    width: 50%;
+}
+
+.companies-title {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.companies-text {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+
+
+/* pros */
+
+.pros {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pros-info {
+    color: #fff;
+    background-color: #0E1B47;
+    padding: 40px 90px 40px 90px;
+    width: 50%;
+}
+
+.pros-info__title {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 36px;
+}
+
+.pros-item {
+    display: flex;
+    column-gap: 16px;
+    margin-bottom: 30px;
+}
+
+.pros-item .pros-text {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+}

@@ -1,0 +1,38 @@
+.btn-main {
+    color: #fff;
+    background-color: #0E1B47;
+    width: 100%;
+    text-align: center;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.btn-main__lg {
+    max-width: 210px;
+    padding: 16px 0;
+}
+
+.btn-main__sm {
+    max-width: 110px;
+    padding: 8px 0;
+}
+
+.btn-main-outline {
+    background-color: transparent !important;
+    color: #0E1B47;
+    font-weight: 700;
+}
+
+.btn-white {
+    background-color: #fff !important;
+    color: #0E1B47 !important;
+    font-weight: 700;
+}
+
+.btn-main-outline-white {
+    background-color: transparent !important;
+    color: #fff !important;
+}
