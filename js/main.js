@@ -1,5 +1,17 @@
 let accardionsItems = document.querySelectorAll('.accardion-head')
 
+let navMenu = document.querySelector(".nav-menu");
+let navBarToggle = document.getElementById("nav-burger");
+let navBurger = document.getElementById("nav-toggle-btn");
+
+navBarToggle.addEventListener("click", function () {
+    console.log('click')
+    navMenu.classList.toggle('open')
+    navBurger.classList.toggle("active");
+});
+
+
+
 
 accardionsItems.forEach(item => {
     console.log(item)
@@ -29,3 +41,9 @@ function displaySlides(n) {
     }
     slides[slide_index - 1].style.display = "block";
 }
+
+
+
+
+
+

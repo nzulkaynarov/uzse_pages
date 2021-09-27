@@ -8,6 +8,8 @@
 }
 
 
+
+
 .listing-info {
     width: 50%;
 }
@@ -25,6 +27,22 @@
     line-height: 24px;
     letter-spacing: .5px;
     margin-bottom: 24px;
+}
+
+
+@media screen and (max-width: 992px) {
+    .listing {
+        flex-direction: column;
+    }
+
+    .listing-info .listing-title {
+        font-size: 32px;
+
+    }
+
+    .listing-info {
+        width: 100%;
+    }
 }
 
 /* advantages */
@@ -77,6 +95,24 @@
     color: #081729;
 }
 
+
+@media screen and (max-width: 992px) {
+    .advantages-content {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .advantages-content .advantages-card {
+        flex: 1 1 calc(50% - 40px);
+    }
+
+
+    .advantages-head .advantages-title {
+        font-size: 32px;
+
+    }
+}
+
 /* listing companies */
 
 .companies {
@@ -101,6 +137,38 @@
     font-size: 16px;
     font-weight: 400;
     margin-bottom: 24px;
+}
+
+
+@media screen and (max-width: 992px) {
+
+    .companies {
+        margin: 0 20px;
+    }
+
+    .companies-info {
+        width: 100%;
+        margin-bottom: 32px;
+    }
+
+    .companies {
+        flex-direction: column;
+    }
+
+    .companies-title {
+        font-size: 32px;
+        font-weight: 700;
+        margin-bottom: 24px;
+    }
+
+    .companies-img {
+        margin-bottom: 32px;
+    }
+
+
+    .companies-img img {
+        width: 100%;
+    }
 }
 
 
@@ -135,4 +203,31 @@
     font-size: 16px;
     font-weight: 300;
     line-height: 24px;
+}
+
+
+@media screen and (max-width: 992px) {
+
+    .pros {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .pros-info {
+        color: #fff;
+        background-color: #0E1B47;
+        padding: 32px;
+        width: 100%;
+        margin-bottom: 32px;
+    }
+
+    .companies {
+        flex-direction: column;
+    }
+
+    .pros-info__title {
+        font-size: 32px;
+        font-weight: 700;
+        margin-bottom: 32px;
+    }
 }

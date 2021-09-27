@@ -5,6 +5,11 @@
 @import url('./btn.css');
 @import url('./listing.css');
 @import url('./market.css');
+@import url('./broker.css');
+@import url('../css/steps.css');
+
+@import url('../css/menuBurger.css');
+@import url('../css/table.css');
 
 * {
     margin: 0;
@@ -42,12 +47,40 @@ body {
     margin-top: 2em;
 }
 
+.ml-8 {
+    margin-left: 8px;
+}
+
+.mr-8 {
+    margin-right: 8px;
+}
+
+.mb-16 {
+    margin-bottom: 16px;
+}
+
+.mb-32 {
+    margin-bottom: 32px;
+}
+
+.mb-56 {
+    margin-bottom: 56px;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
 .d-flex {
     display: flex;
 }
 
 .justify-between {
     justify-content: space-between;
+}
+
+.justify-center {
+    justify-content: center;
 }
 
 .align-center {
@@ -72,6 +105,10 @@ body {
 
 .mt-112 {
     margin-top: 112px;
+}
+
+.mr-32 {
+    margin-right: 32px;
 }
 
 .center {
@@ -133,11 +170,12 @@ body {
 }
 
 .nav-links {
-    width: 40%;
+    width: 50%;
     height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    column-gap: 10px;
 }
 
 .links {
@@ -184,12 +222,13 @@ body {
     width: 100%;
     height: 80px;
     background: #0E1B47;
+    overflow: hidden;
 }
 
 .header-card {
-    width: 25%;
+    width: auto;
     height: 80%;
-    margin-right: 5px;
+    margin-right: 20px;
     border-left: 1px solid #808191;
     padding: 5px;
 }
@@ -197,6 +236,18 @@ body {
 .header-card-parent {
     display: flex;
     align-items: center;
+
+    animation: loop 10s linear infinite forwards;
+}
+
+@keyframes loop {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-150%);
+    }
 }
 
 .card-title {
@@ -264,10 +315,47 @@ body {
     background: url('../images/hero/aboutbg.png');
 }
 
+.header-light {
+    background-color: #fff;
+
+}
+
+.hero-flex {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.hero-flex-img {
+    max-width: 50%;
+    height: 80%;
+}
+
+.hero-flex-img img {
+    max-width: 100%;
+    max-height: 400px;
+}
+
+.header-light .header-card .card-title {
+    color: #081729;
+}
+
 .hero-activity,
 .header-activity {
     background: rgb(5, 117, 230);
     background: linear-gradient(90deg, rgba(5, 117, 230, 1) 0%, rgba(2, 27, 121, 1) 100%);
+}
+
+.hero-layer-2 {
+    background: rgb(12, 22, 58);
+    background: linear-gradient(90deg, #3647DC 0%, #5242B5 100%);
+
 }
 
 
@@ -336,6 +424,23 @@ body {
     width: 35%;
 }
 
+@media screen and (max-width: 992px) {
+    .hero-text {
+        left: 10%;
+        width: 75% !important;
+    }
+}
+
+.hero-multi {
+    position: absolute;
+    top: 20%;
+    width: 100%;
+    display: flex;
+    column-gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
 .hero-bottom {
     position: absolute;
     bottom: 0;
@@ -350,25 +455,45 @@ body {
     cursor: pointer;
 }
 
-.active-line {
+/* .active-line {
     position: absolute;
     top: -1px;
     width: inherit;
     height: 1px;
     background-color: #fff;
-}
+} */
 
 .hero-bottom-card h5 {
     font-size: 16px;
     font-weight: 300;
-
 }
 
+.active-tab {
+    position: relative;
+    font-weight: 700 !important;
+}
+
+
+.active-tab::after {
+    position: absolute;
+    content: '';
+    top: -21px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+}
 
 .hero-text-start {
     position: absolute;
     top: 20%;
     width: 35%;
+}
+
+@media screen and (max-width: 992px) {
+    .hero-text-start {
+        width: 90%;
+    }
 }
 
 .hero-text__title {
@@ -384,6 +509,25 @@ body {
     color: #E6E6EA;
     font-size: 18px;
     line-height: 25px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .hero-text__title {
+        font-size: 42px;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero-text__title {
+        font-size: 32px;
+        margin-bottom: 16px;
+    }
+
+    .hero-text_subtext {
+        font-size: 16px;
+        line-height: 25px;
+    }
 }
 
 .hero-btn {

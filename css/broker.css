@@ -1,0 +1,257 @@
+.torg {
+    text-align: center;
+    color: #081729;
+}
+
+.torg-title {
+    font-size: 36px;
+    font-weight: 700;
+
+    margin-bottom: 56px;
+}
+
+.torg-content {
+    text-align: start;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 32px;
+}
+
+
+.torg-info {
+    width: 60%;
+    font-weight: 400;
+
+}
+
+.torg-img {
+    width: 35%;
+}
+
+
+.torg-img img {
+    width: 100%;
+}
+
+@media screen and (max-width: 992px) {
+    .torg-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .torg-info {
+        margin-bottom: 64px;
+        width: 100%;
+    }
+
+    .torg-img {
+        width: 40%;
+    }
+}
+
+
+
+.info-box {
+    font-weight: 700;
+}
+
+
+.help {
+    position: relative;
+    width: 100%;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.help-title {
+    text-align: center;
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 42px;
+}
+
+.help-content {
+    text-align: start;
+    width: 90%;
+}
+
+.help-content .help-heading {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 32px;
+}
+
+.help-list {
+    margin-bottom: 24px;
+}
+
+.help-list .help-list__item {
+    list-style: decimal;
+    margin-bottom: 8px;
+}
+
+.sublist {
+    margin-left: 12px;
+}
+
+.sublist .sublist-item {
+    list-style: disc;
+
+}
+
+.help-icon {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 450px;
+    height: 450px;
+}
+
+.help-icon img {
+    width: 100%;
+    height: 100%;
+}
+
+.atestatsiya {
+    color: #081729;
+}
+
+.atestatsiya-title {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 48px;
+    text-align: center;
+}
+
+
+.atestatsiya-info {
+    display: flex;
+    column-gap: 40px;
+    margin-bottom: 64px;
+}
+
+.atestatsiya-info p {
+    flex: 1 1 calc(50% - 40px);
+    letter-spacing: .5px;
+    line-height: 24px;
+    font-weight: 18px;
+    font-weight: 400;
+}
+
+.atestatsiya-pros {
+    display: flex;
+    /* justify-content: space-between; */
+    column-gap: 40px;
+    align-items: center;
+}
+
+.atestatsiya-img,
+.atestatsiya-pros>.pros-info {
+    flex: 1 1 calc(50% - 40px);
+}
+
+.atestatsiya-pros>.pros-info {
+    padding: 40px 48px !important;
+}
+
+.atestatsiya-pros__title {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 32px;
+}
+
+
+.atestatsiya-doc {
+    margin-top: 48px;
+    display: flex;
+    justify-content: center;
+    column-gap: 40px;
+
+}
+
+@media screen and (max-width: 992px) {
+    .atestatsiya-pros {
+        flex-direction: column;
+    }
+
+    .atestatsiya-img {
+        width: 100%;
+        text-align: center;
+        margin: 42px 0;
+    }
+
+    .atestatsiya-pros>.pros-info {
+        width: 100%;
+    }
+}
+
+
+/* tarrifs */
+
+
+.tarrif {
+    color: #0E1B47;
+    margin-bottom: 24px;
+}
+
+.tarrif-title {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 42px;
+    text-align: center;
+}
+
+.tarrif-box {
+    border: 1px solid #D7DFE9;
+}
+
+.tarrif-box__heading {
+    display: flex;
+    height: 100%;
+}
+
+.tarrif-box__heading .tarrif-type {
+    flex: 1 1 50%;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.vr-line {
+    width: 1px;
+    background-color: #D7DFE9;
+    height: 60px;
+}
+
+.tarrif-list__title {
+    font-size: 16px;
+    font-weight: 700;
+    padding: 20px 48px;
+    border-top: 1px solid #D7DFE9;
+    border-bottom: 1px solid #D7DFE9;
+    margin-bottom: 32px;
+}
+
+.tarrif-item {
+    /* padding: 0 72px; */
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+
+}
+
+.tarrif-item__name,
+.tarrif-item__desc {
+    flex: 0 1 40%;
+}
+
+/* note */
+
+.note {
+    width: 80%;
+}
+
+.note span {
+    font-weight: 700;
+}

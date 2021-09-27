@@ -1,0 +1,113 @@
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+}
+
+.open * {
+    color: #0C163A !important;
+}
+
+@media screen and (max-width: 992px) {
+    .nav-menu {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+    }
+}
+
+.open {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.open .nav-links {
+    height: auto;
+}
+
+.open .nav-buttons {
+    margin: 32px 0;
+}
+
+
+.navigation-links .nav-mobile {
+    display: none;
+    position: fixed;
+    right: 32px;
+    background: transparent;
+    height: 48px;
+    width: 48px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+
+
+@media screen and (max-width: 992px) {
+    .navigation-links .nav-mobile {
+        display: block;
+    }
+}
+
+.navigation-links .nav-mobile #nav-toggle-btn {
+    position: absolute;
+    left: 0;
+    top: 20px;
+    cursor: pointer;
+}
+
+.navigation-links .nav-mobile #nav-toggle-btn span,
+.navigation-links .nav-mobile #nav-toggle-btn span::after,
+.navigation-links .nav-mobile #nav-toggle-btn span::before {
+    cursor: pointer;
+    border-radius: 1px;
+    height: 3px;
+    width: 32px;
+    background: #0C163A;
+    position: absolute;
+    display: block;
+    content: '';
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+
+.navigation-links .nav-mobile #nav-toggle-btn span::before {
+    top: -10px;
+}
+
+.navigation-links .nav-mobile #nav-toggle-btn span::after {
+    bottom: -10px;
+}
+
+.navigation-links .nav-mobile #nav-toggle-btn.active span {
+    background-color: transparent;
+}
+
+.navigation-links .nav-mobile #nav-toggle-btn.active span::before,
+.navigation-links .nav-mobile #nav-toggle-btn.active span::after {
+    top: 0;
+}
+
+.navigation-links .nav-mobile #nav-toggle-btn.active span:before {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.navigation-links .nav-mobile #nav-toggle-btn.active span:after {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
